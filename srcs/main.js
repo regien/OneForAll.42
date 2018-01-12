@@ -4,19 +4,49 @@ const url = require('url')
 
 const iconPath = path.join(__dirname, 'icon.png');
 let appIcon = null;
-
 let mainWindow = null;
 
-function systemTray () {
+function systemTray (win) {
+  appIcon = new Tray(iconPath);
+  var contextMenu = Menu.buildFromTemplate([
+    {
+      label: 'Item1',
+      type: 'radio',
+      icon: iconPath
+    },
+    {
+      label: 'Item2',
+      submenu: [
+        { label: 'submenu1' },
+        { label: 'submenu2' }
+      ]
+    },
+    {
+      label: 'Item3',
+      type: 'radio',
+      checked: true
+    },
+    {
+      label: 'Toggle DevTools',
+      accelerator: 'Alt+Command+I',
+      click: function() {
+        win.show();
+        win.toggleDevTools();
+      }
+    },
+    { label: 'Quit',
+      accelerator: 'Command+Q',
+      selector: 'terminate:',
+    }
+  ]);
+  appIcon.setToolTip('This is my application.');
+  appIcon.setContextMenu(contextMenu);
   return ;
 }
 
 function createWindow () {
-  // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
-  //systemTray();
-  appIcon = new Tray(iconPath);
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -35,6 +65,8 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  systemTray(mainWindow);
 }
 
 // This method will be called when Electron has finished
@@ -57,6 +89,7 @@ app.on('activate', function () {
   if (mainWindow === null) {
     createWindow()
   }
+  return ;
 })
 
 // In this file you can include the rest of your app's specific main process
