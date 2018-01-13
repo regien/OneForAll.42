@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = {
   systemTray: function (win) {
-    const iconPath = path.join(__dirname, 'icon.png');
+    const iconPath = path.join(__dirname, 'app/img/icon.png');
     var appIcon = new Tray(iconPath);
     var contextMenu = Menu.buildFromTemplate([
       {
