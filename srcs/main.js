@@ -1,6 +1,6 @@
 const {app} = require('electron');
 
-const {createWindow} = require('./createWindow');
+const {createWindow} = require('./electron/window');
 
 let mainWindow = null;
 
