@@ -2,7 +2,7 @@
   "name": "ft_box",
   "version": "1.0.0",
   "description": "All in one application for 42 :)",
-  "main": "electron/main.js",
+  "main": "srcs/main.js",
   "scripts": {
     "start": "electron ."
   },
