@@ -9,24 +9,10 @@
 
     <webview id="foo" src="https://intra.42.fr/" style="display:inline-flex; width:100%; height:555px"></webview>
 
-
+    <!-- Electron -->
     <script>
-      require('../srcs/renderer.js')
-      onload = () => {
-        const webview = document.querySelector('webview')
-        const indicator = document.querySelector('.indicator')
-
-        const loadstart = () => {
-          indicator.innerText = 'loading...'
-        }
-
-        const loadstop = () => {
-          indicator.innerText = ''
-        }
-
-        webview.addEventListener('did-start-loading', loadstart)
-        webview.addEventListener('did-stop-loading', loadstop)
-      }
+      require('../srcs/webview.js');
+      require('../srcs/renderer.js');
     </script>
   </body>
 </html>
