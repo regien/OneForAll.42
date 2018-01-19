@@ -1,15 +1,34 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>ft_box</title>
-  </head>
-  <body>
 
+    <!--- Basic App Needs
+    ================================================== -->
+    <meta charset="UTF-8" />
+    <title>ft_box</title>
+    <meta name="author" content="jraleman" />
+
+    <!-- CSS Stylesheets
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <!-- Fonts
+    ================================================== -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+
+  </head>
+
+  <body>
 
     <webview id="foo" src="https://intra.42.fr/" style="display:inline-flex; width:100%; height:555px"></webview>
 
-    <!-- Electron -->
+    <!-- Javascript files
+    ================================================== -->
+    <script src="js/scripts.js" charset="utf-8" type="text/javascript"></script>
+
+    <!-- Electron files
+    ================================================== -->
     <script>
       require('../srcs/webview.js');
       require('../srcs/renderer.js');
