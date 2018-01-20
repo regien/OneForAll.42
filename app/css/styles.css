@@ -1,3 +1,18 @@
+input {
+  display: none;
+}
+
+label {
+  display: block;
+  float: left;
+  width: 20%;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
 webview {
   position: absolute;
   top: 0;
