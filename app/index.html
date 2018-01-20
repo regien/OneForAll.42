@@ -11,7 +11,7 @@
 
     <!-- CSS Stylesheets
     ================================================== -->
-    <link rel="stylesheet" href="css/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.min.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
     <!-- Fonts
@@ -22,13 +22,16 @@
 
   <body>
 
-    <webview id="foo" src="https://intra.42.fr/"></webview>
-
     <!--
     <webview id="foo" src="https://cantina.42.us.org/"></webview>
     <webview id="foo" src="https://ambassador.42.us.org/"></webview>
     <webview id="foo" src="https://42schoolsiliconvalley.slack.com/"></webview>
     -->
+
+    <!-- Intra -->
+    <input id="intra" type="radio" name="tabs" checked />
+    <label for="intra"><i class="fa fa-code"></i><span>Intra</span></label>
+    <webview id="foo" src="https://intra.42.fr/"></webview>
 
     <!-- Javascript files
     ================================================== -->
