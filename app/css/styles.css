@@ -17,6 +17,13 @@ section {
   display: none;
 }
 
+#intra-tab:checked ~ #intra-section,
+#cantina-tab:checked ~ #cantina-section,
+#ambassadors-tab:checked ~ #ambassadors-section,
+#slack-tab:checked ~ #slack-section {
+  display: block;
+}
+
 webview {
   position: absolute;
   top: 0;
