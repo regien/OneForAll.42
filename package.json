@@ -2,7 +2,14 @@
   "name": "one-for-all",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/jraleman/OneForAll.42",
   "homepage": "https://jraleman.com/OneForAll.42",
+  "keywords": [
+    "OneForAll",
+    "42"
+  ],
+  "author": "jraleman",
+  "license": "MIT",
   "dependencies": {
     "material-ui": "^0.20.1",
     "react": "^16.4.1",
