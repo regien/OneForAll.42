@@ -182,6 +182,7 @@ And then just run the lint from your end.
     - [x] Follow [Christian Sepulveda's guide](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
     - [x] Install `foreman`, allow executing the app from command line
     - [x] Install `electron-builder` and add build script
+    - [ ] Follow [flaviocopes' guide](https://flaviocopes.com/react-electron/)
   - [ ] Configure menu/task manager
   - [ ] Handle needed native events
     - [ ] Add notifications support
@@ -259,6 +260,7 @@ And then just run the lint from your end.
 
 - [electron-quick-start](https://github.com/electron/electron-quick-start)
 - [Christian Sepulveda's - How to build an Electron app using create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
+- [Flaviocopes - react-electron)](https://flaviocopes.com/react-electron/)
 
 ## License
 
