@@ -164,6 +164,11 @@ And then just run the lint from your end.
   - [x] Init `create-react-app`
   - [x] Set styleguide
   - [x] Config lint script
+- [ ] Pitch
+  - [ ] Prototype
+  - [ ] Scalability
+  - [ ] What, How, Why?
+  - [ ] Google Slides
 - [ ] Design
   - [ ] Logo
   - [ ] Define color pallet
@@ -191,11 +196,23 @@ And then just run the lint from your end.
     - [ ] TabNavigator Structure
       - [ ] Style
       - [ ] Icons
+    - [ ] Sub-menu modal or something like that
     - [ ] Use `react-router`
+  - [ ] Fixtures
+    - [ ] 42API
+      - [ ] 42API_userData.json
+      - [ ] 42API_userList.json
+    - [ ] appData.json
+      - [ ] navTabs (boolean flags)
+      - [ ] defaultLanguage
+      - [ ] messageOfTheDay
+      - [ ] defaultTheme
+  - [ ] Firebase
+    - [ ] Validate login
   - [ ] Add Screens
     - [ ] Login
       - [ ] Validate data
-      - [ ] Use 42 API
+      - [ ] Use 42 API (fixture for now)
     - [ ] Home Screen
       - [ ] CV Generator via QR Code and tinyurl thingy
       - [ ] Settings
@@ -207,10 +224,11 @@ And then just run the lint from your end.
     - [ ] Slack
     - [ ] Campus
     - [ ] Cantina
-    - [ ] E-commerce
+    - [ ] E-commerce (sub-menu)
       - [ ] 42 Shop
       - [ ] Crowd-funding
       - [ ] Bazaar
+    - [ ] Dorms
   - [ ] Integrate easter eggs via `cheat.js`
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
