@@ -158,8 +158,78 @@ And then just run the lint from your end.
 
 ## Goals
 
-- [ ] ...
-- [x] ...
+- [x] Start
+  - [x] Nuke the repo, start from scratch!
+  - [x] Rename repo -> `OneForAll.42`
+  - [x] Init `create-react-app`
+  - [x] Set styleguide
+  - [x] Config lint script
+- [ ] Design
+  - [ ] Logo
+  - [ ] Define color pallet
+  - [x] UI / UX ideas
+    - [x] Multiple services
+  - [ ] Attach App's mockups
+  - [ ] Make a tray icon
+- [ ] Electron
+  - [ ] Integrate electron
+  - [ ] Configure menu/task manager
+  - [ ] Handle needed native events
+    - [ ] Add notifications support
+    - [ ] Hotkeys support (use tab to navigator)
+- [ ] ReactJS
+  - [ ] Install `material-ui`
+  - [ ] Setup Project Structure
+    - [ ] Add dummy components
+    - [ ] Add dummy screens
+    - [ ] Add dummy containers
+  - [ ] Install `Redux`
+    - [ ] Setup the redux store
+    - [ ] Use `redux-thunk`
+    - [ ] Keep stored data via `redux-persist`
+  - [ ] Navigation
+    - [ ] TabNavigator Structure
+      - [ ] Style
+      - [ ] Icons
+    - [ ] Use `react-router`
+  - [ ] Add Screens
+    - [ ] Login
+      - [ ] Validate data
+      - [ ] Use 42 API
+    - [ ] Home Screen
+      - [ ] CV Generator via QR Code and tinyurl thingy
+      - [ ] Settings
+        - [ ] Change password
+        - [ ] Toggle services (all on by default)
+        - [ ] Language selector
+        - [ ] Change themes (day-night)
+    - [ ] Intra
+    - [ ] Slack
+    - [ ] Campus
+    - [ ] Cantina
+    - [ ] E-commerce
+      - [ ] 42 Shop
+      - [ ] Crowd-funding
+      - [ ] Bazaar
+  - [ ] Integrate easter eggs via `cheat.js`
+    - [ ] Add `boku no hero` references as easter egg
+    - [ ] Video games reference too
+    - [ ] And a bit about HGTtG
+  - [ ] Install `i18n`
+    - [ ] Configure the module
+    - [ ] Integrate to app
+    - [ ] Add languages
+      - [ ] English
+      - [ ] Spanish
+      - [ ] German
+      - [ ] French
+      - [ ] Russian
+      - [ ] Portuguese
+- [ ] Housekeeping
+  - [ ] Refactor code
+  - [ ] Apply code styleguide (lint)
+  - [ ] Remove unnecessary modules
+  - [ ] Keep up to date!
 
 ## Sources
 
