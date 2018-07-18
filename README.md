@@ -1,6 +1,10 @@
 # OneForAll.42
 
 ![npm](https://img.shields.io/badge/npm-v.6.2.0-22aad0.svg)
+[![RN-Version](https://img.shields.io/badge/react.js-16.3.2-01babc.svg)](https://github.com/facebook/react/releases/tag/v16.3.2)
+[![GitHub Stars](https://img.shields.io/github/stars/jraleman/OneForAll.42.svg)](https://github.com/jraleman/OneForAll.42/stars)
+[![GitHub Issues](https://img.shields.io/github/issues/jraleman/OneForAll.42.svg)](https://github.com/jraleman/OneForAll.42/issues)
+[![Slack](https://img.shields.io/badge/slack-open-yellow.svg)](https://42siliconvalley.slack.com)
 
 ## About
 
