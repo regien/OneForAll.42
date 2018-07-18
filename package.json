@@ -17,7 +17,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "electron-start": "node src/electron-wait-react",
+    "electron-start": "node src/start-react",
     "lint": "semistandard --verbose | snazzy || true",
     "lint-log": "npm run lint > lint.log ; open lint.log || true",
     "lint-log-linux": "npm run lint > lint.log ; open lint.log || true",
