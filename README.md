@@ -183,21 +183,23 @@ And then just run the lint from your end.
     - [ ] Add notifications support
     - [ ] Hotkeys support (use tab to navigator)
 - [ ] ReactJS
-  - [ ] Install `material-ui`
+  - [x] Integrate `material-ui`
+    - [x] Install the module (`npm install --save material-ui`)
   - [ ] Setup Project Structure
     - [ ] Add dummy components
     - [ ] Add dummy screens
     - [ ] Add dummy containers
-  - [ ] Install `Redux`
+  - [ ] Integrate `redux`
+    - [x] Install the module (`npm install --save redux`)
     - [ ] Setup the redux store
-    - [ ] Use `redux-thunk`
-    - [ ] Keep stored data via `redux-persist`
+    - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
+    - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
   - [ ] Navigation
     - [ ] TabNavigator Structure
       - [ ] Style
       - [ ] Icons
     - [ ] Sub-menu modal or something like that
-    - [ ] Use `react-router`
+    - [ ] Use `react-router` (`npm install --save react-router`)
   - [ ] Fixtures
     - [ ] 42API
       - [ ] 42API_userData.json
@@ -233,9 +235,9 @@ And then just run the lint from your end.
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
     - [ ] And a bit about HGTtG
-  - [ ] Install `i18n`
+  - [ ] Integrate `i18n`
+    - [x] Install the module  (`npm install --save react-i18n`)
     - [ ] Configure the module
-    - [ ] Integrate to app
     - [ ] Add languages
       - [ ] English
       - [ ] Spanish
@@ -251,7 +253,7 @@ And then just run the lint from your end.
 
 ## Sources
 
-- [How to build an Electron app using create-react-app - Christian Sepulveda's](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
+- [Christian Sepulveda's - How to build an Electron app using create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
 
 ## License
 
