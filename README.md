@@ -267,6 +267,7 @@ And then just run the lint from your end.
 
 - [Jose Ramón Aleman](https://github.com/jraleman)
 - [Gerardo Malpartida](https://github.com/regien)
+- [Cristian Franco](https://github.com/cristianmusic7)
 
 ## Goals
 
@@ -307,10 +308,10 @@ And then just run the lint from your end.
   - [ ] Setup Project Structure
     - [x] Add empty files
     - [x] `tree` directory `./src/`
-    - [ ] Add dummy components
-    - [ ] Add dummy screens
-    - [ ] Add dummy containers
-  - [ ] Fixtures
+    - [x] Add dummy components
+    - [x] Add dummy screens
+    - [x] Add dummy containers
+  - [x] Fixtures
     - [x] Add basic module structure
     - [x] 42API
       - [x] Make a real api call, and copy the data to:
@@ -320,6 +321,7 @@ And then just run the lint from your end.
       - [x] userData
       - [x] settingsData
   - [ ] Screens
+    - [ ] Onboarding
     - [ ] Login
       - [ ] Validate data
       - [ ] Use 42 API (fixture for now)
@@ -333,15 +335,16 @@ And then just run the lint from your end.
         - [ ] Toggle services (all on by default)
         - [ ] Language selector
         - [ ] Change themes (day-night)
-    - [ ] Intra
-    - [ ] Slack
-    - [ ] Campus
-    - [ ] Cantina
-    - [ ] E-commerce (sub-menu)
-      - [ ] 42 Shop
-      - [ ] Crowd-funding
-      - [ ] Bazaar
-    - [ ] Dorms
+    - [ ] Services
+      - [ ] Intra
+      - [ ] Slack
+      - [ ] Campus
+      - [ ] Cantina
+      - [ ] E-commerce (sub-menu)
+        - [ ] 42 Shop
+        - [ ] Crowd-funding
+        - [ ] Bazaar
+      - [ ] Dorms
   - [ ] Integrate easter eggs via `cheat.js`
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
