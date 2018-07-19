@@ -1,0 +1,16 @@
+{
+  "email": null,
+  "login": "gmalpart",
+  "first_name": "Gerardo ",
+  "last_name": "Malpartida",
+  "url": "https://api.intra.42.fr/v2/users/gmalpart",
+  "phone": null,
+  "displayname": "Gerardo  Malpartida",
+  "image_url": "https://cdn.intra.42.fr/users/gmalpart.jpg",
+  "staff?": false,
+  "correction_point": 37,
+  "pool_month": "july",
+  "pool_year": "2017",
+  "location": "e1z2r3p14",
+  "wallet": 185
+}

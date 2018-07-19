@@ -25,17 +25,41 @@ Take a look at our pitch!
 
 ## Setup
 
-Clone the repository:
+Clone the repository
 
 ```
 git clone https://github.com/jraleman/OneForAll.42 OneForAll.42/
 cd OneForAll.42/
 ```
 
-Install dependencies:
+Install dependencies
 
 ```
 npm install
+```
+
+or
+
+```
+yarn install
+```
+
+Then, start the node server
+
+```
+npm start
+```
+
+Use `&` to put it in the background
+
+```
+npm start &
+```
+
+And run the electron instance
+
+```
+npm run electron
 ```
 
 ## Project Structure
@@ -47,7 +71,95 @@ and minimize the component state.
 This is the main idea:
 
 ```
-...
+src/
+├── App/
+│   ├── App.js
+│   ├── index.js
+│   └── styles.js
+├── actions/
+│   ├── constants.js
+│   └── index.js
+├── components/
+│   ├── AppHeader/
+│   │   ├── AppHeader.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   └── TabNavbar/
+│       ├── TabNavbar.js
+│       ├── index.js
+│       └── styles.js
+├── config/
+│   ├── AppConfig.js
+│   └── index.js
+├── containers/
+│   ├── LanguagesContainer/
+│   │   ├── LanguagesContainer.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── RootContainer/
+│   │   ├── RootContainer.js
+│   │   └── index.js
+│   ├── ServicesContainer/
+│   │   ├── ServicesContainer.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   └── ThemesContainer/
+│       ├── ThemesContainer.js
+│       ├── index.js
+│       └── styles.js
+├── electron/
+│   ├── renderer.js
+│   └── starter.js
+├── fixtures/
+│   ├── 42API/
+│   │   └── json/
+│   │       ├── userData.json
+│   │       └── userList.json
+│   ├── OneForAll/
+│   │   └── json/
+│   │       └── appData.json
+│   └── index.js
+├── i18n/
+│   ├── index.js
+│   └── languages/
+│       ├── de.json
+│       ├── en.json
+│       ├── es.json
+│       ├── fr.json
+│       ├── pt.json
+│       └── ru.json
+├── index.js
+├── navigation/
+│   └── ServiceNavigation
+│       ├── ServiceNavigation.js
+│       └── index.js
+├── reducers/
+│   └── index.js
+├── registerServiceWorker.js
+├── screens/
+│   ├── HomeScreen/
+│   │   ├── HomeScreen.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── LoginScreen/
+│   │   ├── LoginScreen.js
+│   │   └── index.js
+│   ├── OnboardingScreen/
+│   │   ├── OnboardingScreen.js
+│   │   └── index.js
+│   └── ServiceScreen/
+│       ├── ServiceScreeen.js
+│       └── index.js
+├── themes/
+|   ├── images
+|   │   └── logo.svg
+|   ├── images.js
+|   ├── index.js
+|   └── metrics.js
+|
+└── transforms/
+    ├── getAvgExp.js
+    └── getAvgHearts.js
 ```
 
 ### Project Structure Walkthrough
@@ -155,6 +267,7 @@ And then just run the lint from your end.
 
 - [Jose Ramón Aleman](https://github.com/jraleman)
 - [Gerardo Malpartida](https://github.com/regien)
+- [Cristian Franco](https://github.com/cristianmusic7)
 
 ## Goals
 
@@ -169,12 +282,14 @@ And then just run the lint from your end.
   - [ ] Scalability
   - [ ] What, How, Why?
   - [ ] Google Slides
+  - [ ] Generate static site from README.md markdown
 - [ ] Design
   - [ ] Logo
   - [ ] Define color pallet
   - [x] UI / UX ideas
     - [x] Multiple services
-  - [ ] Attach App's mockups
+  - [x] Attach App's mockups
+  - [x] Prototype mockups
   - [ ] Make a tray icon
 - [ ] Electron
   - [x] Integrate `electron`
@@ -191,51 +306,45 @@ And then just run the lint from your end.
   - [x] Integrate `material-ui`
     - [x] Install the module (`npm install --save material-ui`)
   - [ ] Setup Project Structure
-    - [ ] Add dummy components
-    - [ ] Add dummy screens
-    - [ ] Add dummy containers
-  - [ ] Integrate `redux`
-    - [x] Install the module (`npm install --save redux`)
-    - [ ] Setup the redux store
-    - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
-    - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
-  - [ ] Navigation
-    - [ ] TabNavigator Structure
-      - [ ] Style
-      - [ ] Icons
-    - [ ] Sub-menu modal or something like that
-    - [ ] Use `react-router` (`npm install --save react-router`)
-  - [ ] Fixtures
-    - [ ] 42API
-      - [ ] 42API_userData.json
-      - [ ] 42API_userList.json
-    - [ ] appData.json
-      - [ ] navTabs (boolean flags)
-      - [ ] defaultLanguage
-      - [ ] messageOfTheDay
-      - [ ] defaultTheme
-  - [ ] Firebase
-    - [ ] Validate login
-  - [ ] Add Screens
+    - [x] Add empty files
+    - [x] `tree` directory `./src/`
+    - [x] Add dummy components
+    - [x] Add dummy screens
+    - [x] Add dummy containers
+  - [x] Fixtures
+    - [x] Add basic module structure
+    - [x] 42API
+      - [x] Make a real api call, and copy the data to:
+        - [x] 42API_userData.json
+        - [x] 42API_userList.json
+    - [x] appData.json
+      - [x] userData
+      - [x] settingsData
+  - [ ] Screens
+    - [ ] Onboarding
     - [ ] Login
       - [ ] Validate data
       - [ ] Use 42 API (fixture for now)
     - [ ] Home Screen
+      - [ ] Add Avatar
+      - [ ] Basic Info
+      - [ ] Responsive Banner
       - [ ] CV Generator via QR Code and tinyurl thingy
       - [ ] Settings
         - [ ] Change password
         - [ ] Toggle services (all on by default)
         - [ ] Language selector
         - [ ] Change themes (day-night)
-    - [ ] Intra
-    - [ ] Slack
-    - [ ] Campus
-    - [ ] Cantina
-    - [ ] E-commerce (sub-menu)
-      - [ ] 42 Shop
-      - [ ] Crowd-funding
-      - [ ] Bazaar
-    - [ ] Dorms
+    - [ ] Services
+      - [ ] Intra
+      - [ ] Slack
+      - [ ] Campus
+      - [ ] Cantina
+      - [ ] E-commerce (sub-menu)
+        - [ ] 42 Shop
+        - [ ] Crowd-funding
+        - [ ] Bazaar
+      - [ ] Dorms
   - [ ] Integrate easter eggs via `cheat.js`
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
@@ -250,6 +359,19 @@ And then just run the lint from your end.
       - [ ] French
       - [ ] Russian
       - [ ] Portuguese
+  - [ ] Integrate `redux`
+    - [x] Install the module (`npm install --save redux`)
+    - [ ] Setup the redux store
+    - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
+    - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
+  - [ ] Navigation
+    - [ ] TabNavigator Structure
+      - [ ] Style
+      - [ ] Icons
+    - [ ] Sub-menu modal or something like that
+    - [ ] Use `react-router` (`npm install --save react-router`)
+  - [ ] Firebase
+    - [ ] Validate login
 - [ ] Housekeeping
   - [ ] Refactor code
   - [ ] Apply code styleguide (lint)

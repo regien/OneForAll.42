@@ -1,0 +1,29 @@
+{
+	"skipOnboarding": false,
+	"loginStatus": false,
+	"userData": {
+		"username": null,
+		"location": null,
+		"timeLab": null,
+		"expMonth": null,
+		"hearts": 3
+	},
+	"settingsData": {
+		"theme": "default",
+		"languages": "en",
+		"services": {
+			"intra": true,
+			"slack": true,
+			"campus": true,
+			"eCommerce": {
+				"shop42": true,
+				"bazaar": true,
+				"crowdFunding": true
+			},
+			"cantina": true,
+			"ambassadors": true,
+			"dorms": true,
+			"clubs": false
+		}
+	}
+}
