@@ -1,0 +1,16 @@
+{
+  "email": null,
+  "login": "cfranco",
+  "first_name": "Cristian",
+  "last_name": "Franco",
+  "url": "https://api.intra.42.fr/v2/users/cfranco",
+  "phone": null,
+  "displayname": "Cristian Franco",
+  "image_url": "https://cdn.intra.42.fr/users/cfranco.jpg",
+  "staff?": false,
+  "correction_point": 8,
+  "pool_month": "january",
+  "pool_year": "2018",
+  "location": "e1z2r3p10",
+  "wallet": 125,
+}
