@@ -182,7 +182,7 @@ And then just run the lint from your end.
     - [x] Follow [Christian Sepulveda's guide](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
     - [x] Install `foreman`, allow executing the app from command line
     - [x] Install `electron-builder` and add build script
-    - [ ] Follow [flaviocopes' guide](https://flaviocopes.com/react-electron/)
+    - [x] Follow [flaviocopes' guide](https://flaviocopes.com/react-electron/)
   - [ ] Configure menu/task manager
   - [ ] Handle needed native events
     - [ ] Add notifications support
@@ -239,7 +239,7 @@ And then just run the lint from your end.
   - [ ] Integrate easter eggs via `cheat.js`
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
-    - [ ] And a bit about HGTtG
+    - [ ] And a bit about HHGttG
   - [ ] Integrate `i18n`
     - [x] Install the module  (`npm install --save react-i18n`)
     - [ ] Configure the module
