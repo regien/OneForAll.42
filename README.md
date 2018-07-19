@@ -71,7 +71,92 @@ and minimize the component state.
 This is the main idea:
 
 ```
-...
+src/
+├── App/
+│   ├── App.js
+│   ├── index.js
+│   └── styles.js
+├── actions/
+│   ├── constants.js
+│   └── index.js
+├── components/
+│   ├── AppHeader/
+│   │   ├── AppHeader.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   └── TabNavbar/
+│       ├── TabNavbar.js
+│       ├── index.js
+│       └── styles.js
+├── config/
+│   ├── AppConfig.js
+│   └── index.js
+├── containers/
+│   ├── LanguagesContainer/
+│   │   ├── LanguagesContainer.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── RootContainer/
+│   │   ├── RootContainer.js
+│   │   └── index.js
+│   ├── ServicesContainer/
+│   │   ├── ServicesContainer.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   └── ThemesContainer/
+│       ├── ThemesContainer.js
+│       ├── index.js
+│       └── styles.js
+├── electron/
+│   ├── renderer.js
+│   └── starter.js
+├── fixtures/
+│   ├── 42API/
+│   │   └── json/
+│   │       ├── userData.json
+│   │       └── userList.json
+│   ├── OneForAll/
+│   │   └── json/
+│   │       └── appData.json
+│   └── index.js
+├── i18n/
+│   ├── index.js
+│   └── languages/
+│       ├── de.json
+│       ├── en.json
+│       ├── es.json
+│       ├── fr.json
+│       ├── pt.json
+│       └── ru.json
+├── index.js
+├── navigation
+│   └── ServiceNavigation
+│       ├── ServiceNavigation.js
+│       └── index.js
+├── reducers
+│   └── index.js
+├── registerServiceWorker.js
+├── screens
+│   ├── HomeScreen
+│   │   ├── HomeScreen.js
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── LoginScreen
+│   │   ├── LoginScreen.js
+│   │   └── index.js
+│   ├── OnboardingScreen
+│   │   ├── OnboardingScreen.js
+│   │   └── index.js
+│   └── ServiceScreen
+│       ├── ServiceScreeen.js
+│       └── index.js
+├── start-react.js
+└── themes
+    ├── images
+    │   └── logo.svg
+    ├── images.js
+    ├── index.js
+    └── metrics.js
 ```
 
 ### Project Structure Walkthrough
