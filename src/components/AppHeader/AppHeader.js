@@ -5,6 +5,11 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import SearchBar from 'material-ui-search-bar';
+import MicIcon from '@material-ui/icons/Mic';
+import ChatIcon from '@material-ui/icons/Chat';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
 
 class AppHeader extends React.Component {
   constructor (props) {
@@ -12,7 +17,22 @@ class AppHeader extends React.Component {
     this._classes = this.props.classes;
     this._title = this.props.title;
     this._logo = this.props.logo;
-    this.state = {};
+    this.state = {
+      searcbValue: null,
+      newValue: null
+    };
+    return ;
+  }
+  handleSearch (val) {
+    alert("You have searched for: \n" + val);
+    return ;
+  }
+  handleChat () {
+    alert("Hello there!")
+    return ;
+  }
+  handleMic () {
+    alert("1. 2. 3... Testing...")
     return ;
   }
   render () {
@@ -22,8 +42,29 @@ class AppHeader extends React.Component {
           position={ "static" }
           color={ "primary" }
         >
-          <Toolbar>
-            <p>{ "AppBar" }</p>
+          <Toolbar style={{ justifyContent: 'space-between'}}>
+            <SearchBar
+              className={ this._classes.flex }
+              value={ this.state.searchValue }
+              onChange={(newValue) => this.setState({ searchValue: newValue })}
+              onRequestSearch={() => this.handleSearch(this.state.searchValue)}
+            />
+            <div className={ this._classes.btnContainer }>
+            <IconButton
+              className={ this._classes.btn }
+              color="inherit"
+              aria-label="Options"
+            >
+              <MicIcon />
+            </IconButton>
+            <IconButton
+              className={ this._classes.btn }
+              color="inherit"
+              aria-label="Options"
+            >
+              <ChatIcon />
+            </IconButton>
+            </div>
           </Toolbar>
         </AppBar>
       </div>
