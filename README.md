@@ -129,34 +129,37 @@ src/
 │       ├── pt.json
 │       └── ru.json
 ├── index.js
-├── navigation
+├── navigation/
 │   └── ServiceNavigation
 │       ├── ServiceNavigation.js
 │       └── index.js
-├── reducers
+├── reducers/
 │   └── index.js
 ├── registerServiceWorker.js
-├── screens
-│   ├── HomeScreen
+├── screens/
+│   ├── HomeScreen/
 │   │   ├── HomeScreen.js
 │   │   ├── index.js
 │   │   └── styles.js
-│   ├── LoginScreen
+│   ├── LoginScreen/
 │   │   ├── LoginScreen.js
 │   │   └── index.js
-│   ├── OnboardingScreen
+│   ├── OnboardingScreen/
 │   │   ├── OnboardingScreen.js
 │   │   └── index.js
-│   └── ServiceScreen
+│   └── ServiceScreen/
 │       ├── ServiceScreeen.js
 │       └── index.js
-├── start-react.js
-└── themes
-    ├── images
-    │   └── logo.svg
-    ├── images.js
-    ├── index.js
-    └── metrics.js
+├── themes/
+|   ├── images
+|   │   └── logo.svg
+|   ├── images.js
+|   ├── index.js
+|   └── metrics.js
+|
+└── transforms/
+    ├── getAvgExp.js
+    └── getAvgHearts.js
 ```
 
 ### Project Structure Walkthrough
