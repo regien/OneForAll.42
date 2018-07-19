@@ -232,6 +232,7 @@ And then just run the lint from your end.
     - [ ] Sub-menu modal or something like that
     - [ ] Use `react-router` (`npm install --save react-router`)
   - [ ] Fixtures
+    - [x] Add basic module structure
     - [ ] 42API
       - [ ] 42API_userData.json
       - [ ] 42API_userList.json
