@@ -9,16 +9,20 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 
-// icons
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
-import HelpIcon from '@material-ui/icons/Help';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faDotCircle,
+  faUserAstronaut,
+  // faSlack,
+  faChalkboardTeacher,
+  faStore,
+  faCoffee,
+  faHome
+} from '@fortawesome/free-solid-svg-icons'
 
-import FontAwesome from 'react-fontawesome';
+import {
+  faSlack,
+} from '@fortawesome/free-brands-svg-icons'
 
 class TabNavbar extends React.Component {
   constructor (props) {
@@ -37,8 +41,6 @@ class TabNavbar extends React.Component {
     const { value } = this.state;
     return (
       <div className={classes.root}>
-      <FontAwesome name='rocket' />
-      <p>{" as asas jas jasj asj j aj j sajasjasjjja jsj as jja "}</p>
         <BottomNavigation
           value={ this.state.value }
           onChange={ this.handleChange }
@@ -48,37 +50,37 @@ class TabNavbar extends React.Component {
           <BottomNavigationAction
             disabled={ false }
             label="Home"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faDotCircle }/> }
           />
           <BottomNavigationAction
             disabled={ false }
             label="Intra42"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faUserAstronaut }/> }
           />
           <BottomNavigationAction
             disabled={ false }
             label="Slack"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faSlack }/> }
           />
           <BottomNavigationAction
             disabled={ false }
             label="Campus"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faChalkboardTeacher }/> }
           />
           <BottomNavigationAction
             disabled={ false }
             label="Grand Exchange"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faStore }/> }
           />
           <BottomNavigationAction
             disabled={ false }
             label="Cantina"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faCoffee }/> }
           />
           <BottomNavigationAction
             disabled={ false }
             label="Dorms"
-            icon={ <PersonPinIcon /> }
+            icon={ <FontAwesomeIcon icon={ faHome }/> }
           />
         </BottomNavigation>
       </div>
