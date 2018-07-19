@@ -72,53 +72,55 @@ This is the main idea:
 
 ```
 src/
-├── App/
-│   ├── App.js
-│   ├── index.js
-│   └── styles.js
 ├── actions/
 │   ├── constants.js
 │   └── index.js
+├── App.js
 ├── components/
 │   ├── AppHeader/
 │   │   ├── AppHeader.js
 │   │   ├── index.js
 │   │   └── styles.js
 │   └── TabNavbar/
-│       ├── TabNavbar.js
 │       ├── index.js
-│       └── styles.js
+│       ├── styles.js
+│       └── TabNavbar.js
 ├── config/
 │   ├── AppConfig.js
 │   └── index.js
 ├── containers/
 │   ├── LanguagesContainer/
-│   │   ├── LanguagesContainer.js
 │   │   ├── index.js
+│   │   ├── LanguagesContainer.js
 │   │   └── styles.js
 │   ├── RootContainer/
-│   │   ├── RootContainer.js
-│   │   └── index.js
-│   ├── ServicesContainer/
-│   │   ├── ServicesContainer.js
 │   │   ├── index.js
+│   │   └── RootContainer.js
+│   ├── ServicesContainer/
+│   │   ├── index.js
+│   │   ├── ServicesContainer.js
 │   │   └── styles.js
 │   └── ThemesContainer/
-│       ├── ThemesContainer.js
 │       ├── index.js
-│       └── styles.js
+│       ├── styles.js
+│       └── ThemesContainer.js
 ├── electron/
+│   ├── icon.png
 │   ├── renderer.js
-│   └── starter.js
+│   ├── starter.js
+│   ├── tray.js
+│   └── window.js
 ├── fixtures/
 │   ├── 42API/
 │   │   └── json/
-│   │       ├── userData.json
+│   │       ├── userData1.json
+│   │       ├── userData2.json
+│   │       ├── userData3.json
 │   │       └── userList.json
-│   ├── OneForAll/
-│   │   └── json/
-│   │       └── appData.json
-│   └── index.js
+│   ├── index.js
+│   └── OneForAll/
+│       └── json/
+│           └── appData.json
 ├── i18n/
 │   ├── index.js
 │   └── languages/
@@ -130,9 +132,9 @@ src/
 │       └── ru.json
 ├── index.js
 ├── navigation/
-│   └── ServiceNavigation
-│       ├── ServiceNavigation.js
-│       └── index.js
+│   └── ServiceNavigation/
+│       ├── index.js
+│       └── ServiceNavigation.js
 ├── reducers/
 │   └── index.js
 ├── registerServiceWorker.js
@@ -142,21 +144,24 @@ src/
 │   │   ├── index.js
 │   │   └── styles.js
 │   ├── LoginScreen/
+│   │   ├── index.js
 │   │   ├── LoginScreen.js
-│   │   └── index.js
+│   │   └── styles.js
 │   ├── OnboardingScreen/
+│   │   ├── index.js
 │   │   ├── OnboardingScreen.js
-│   │   └── index.js
+│   │   └── styles.js
 │   └── ServiceScreen/
+│       ├── index.js
 │       ├── ServiceScreeen.js
-│       └── index.js
+│       └── styles.js
 ├── themes/
-|   ├── images
-|   │   └── logo.svg
-|   ├── images.js
-|   ├── index.js
-|   └── metrics.js
-|
+│   ├── colors.js
+│   ├── images/
+│   │   └── logo.svg
+│   ├── images.js
+│   ├── index.js
+│   └── metrics.js
 └── transforms/
     ├── getAvgExp.js
     └── getAvgHearts.js
@@ -298,14 +303,15 @@ And then just run the lint from your end.
     - [x] Install `foreman`, allow executing the app from command line
     - [x] Install `electron-builder` and add build script
     - [x] Follow [flaviocopes' guide](https://flaviocopes.com/react-electron/)
+  - [x] System tray
   - [ ] Configure menu/task manager
   - [ ] Handle needed native events
     - [ ] Add notifications support
     - [ ] Hotkeys support (use tab to navigator)
 - [ ] ReactJS
   - [x] Integrate `material-ui`
-    - [x] Install the module (`npm install --save material-ui`)
-  - [ ] Setup Project Structure
+    - [x] Install the module (`npm install @material-ui/core`)
+  - [x] Setup Project Structure
     - [x] Add empty files
     - [x] `tree` directory `./src/`
     - [x] Add dummy components
@@ -314,12 +320,20 @@ And then just run the lint from your end.
   - [x] Fixtures
     - [x] Add basic module structure
     - [x] 42API
-      - [x] Make a real api call, and copy the data to:
-        - [x] 42API_userData.json
-        - [x] 42API_userList.json
+      - [x] Make a real api call, and copy the data to
+        - [x] userData.json
+        - [x] userList.json
     - [x] appData.json
       - [x] userData
       - [x] settingsData
+  - [ ] Components
+    - [ ] AppHeader
+    - [ ] TabNavbar
+  - [ ] Containers
+    - [x] RootContainer
+    - [ ] LanguagesContainer
+    - [ ] ServicesContainer
+    - [ ] ThemesContainer
   - [ ] Screens
     - [ ] Onboarding
     - [ ] Login
