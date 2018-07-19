@@ -25,14 +25,14 @@ Take a look at our pitch!
 
 ## Setup
 
-Clone the repository:
+Clone the repository
 
 ```
 git clone https://github.com/jraleman/OneForAll.42 OneForAll.42/
 cd OneForAll.42/
 ```
 
-Install dependencies:
+Install dependencies
 
 ```
 npm install
@@ -302,37 +302,30 @@ And then just run the lint from your end.
   - [x] Integrate `material-ui`
     - [x] Install the module (`npm install --save material-ui`)
   - [ ] Setup Project Structure
+    - [x] Add empty files
+    - [x] `tree` directory `./src/`
     - [ ] Add dummy components
     - [ ] Add dummy screens
     - [ ] Add dummy containers
-  - [ ] Integrate `redux`
-    - [x] Install the module (`npm install --save redux`)
-    - [ ] Setup the redux store
-    - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
-    - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
-  - [ ] Navigation
-    - [ ] TabNavigator Structure
-      - [ ] Style
-      - [ ] Icons
-    - [ ] Sub-menu modal or something like that
-    - [ ] Use `react-router` (`npm install --save react-router`)
   - [ ] Fixtures
     - [x] Add basic module structure
     - [ ] 42API
-      - [ ] 42API_userData.json
-      - [ ] 42API_userList.json
+      - [ ] Make a real api call, and copy the data to:
+        - [ ] 42API_userData.json
+        - [ ] 42API_userList.json
     - [ ] appData.json
       - [ ] navTabs (boolean flags)
       - [ ] defaultLanguage
       - [ ] messageOfTheDay
       - [ ] defaultTheme
-  - [ ] Firebase
-    - [ ] Validate login
   - [ ] Add Screens
     - [ ] Login
       - [ ] Validate data
       - [ ] Use 42 API (fixture for now)
     - [ ] Home Screen
+      - [ ] Add Avatar
+      - [ ] Basic Info
+      - [ ] Responsive Banner
       - [ ] CV Generator via QR Code and tinyurl thingy
       - [ ] Settings
         - [ ] Change password
@@ -362,6 +355,19 @@ And then just run the lint from your end.
       - [ ] French
       - [ ] Russian
       - [ ] Portuguese
+  - [ ] Integrate `redux`
+    - [x] Install the module (`npm install --save redux`)
+    - [ ] Setup the redux store
+    - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
+    - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
+  - [ ] Navigation
+    - [ ] TabNavigator Structure
+      - [ ] Style
+      - [ ] Icons
+    - [ ] Sub-menu modal or something like that
+    - [ ] Use `react-router` (`npm install --save react-router`)
+  - [ ] Firebase
+    - [ ] Validate login
 - [ ] Housekeeping
   - [ ] Refactor code
   - [ ] Apply code styleguide (lint)
