@@ -1,16 +1,10 @@
 import React from 'react';
+import RootContainer from './containers/RootContainer';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <header>
-          <h1>Welcome to React</h1>
-        </header>
-        <p>
-          lolsdasd
-        </p>
-      </div>
+      <RootContainer />
     );
   }
 }
