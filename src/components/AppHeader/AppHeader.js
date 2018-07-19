@@ -6,6 +6,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import SearchBar from 'material-ui-search-bar';
+import SearchIcon from '@material-ui/icons/Search';
+import CloseIcon from '@material-ui/icons/Close';
 import MicIcon from '@material-ui/icons/Mic';
 import ChatIcon from '@material-ui/icons/Chat';
 import Button from '@material-ui/core/Button';
@@ -44,26 +46,29 @@ class AppHeader extends React.Component {
         >
           <Toolbar style={{ justifyContent: 'space-between'}}>
             <SearchBar
-              className={ this._classes.flex }
+              className={ this._classes.searchBar }
               value={ this.state.searchValue }
               onChange={(newValue) => this.setState({ searchValue: newValue })}
               onRequestSearch={() => this.handleSearch(this.state.searchValue)}
-            />
+            >
+              <CloseIcon color='white'  />
+              <SearchIcon color='white'  />
+            </SearchBar>
             <div className={ this._classes.btnContainer }>
-            <IconButton
-              className={ this._classes.btn }
-              color="inherit"
-              aria-label="Options"
-            >
-              <MicIcon />
-            </IconButton>
-            <IconButton
-              className={ this._classes.btn }
-              color="inherit"
-              aria-label="Options"
-            >
-              <ChatIcon />
-            </IconButton>
+              <IconButton
+                className={ this._classes.btn }
+                color="inherit"
+                aria-label="Options"
+              >
+                <MicIcon />
+              </IconButton>
+              <IconButton
+                className={ this._classes.btn }
+                color="inherit"
+                aria-label="Options"
+              >
+                <ChatIcon />
+              </IconButton>
             </div>
           </Toolbar>
         </AppBar>

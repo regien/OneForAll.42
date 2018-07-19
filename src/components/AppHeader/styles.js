@@ -3,17 +3,19 @@ const styles = theme => ({
     flexGrow: 1,
     justifyContent: 'space-between',
   },
-  flex: {
+  searchBar: {
     flexGrow: 0.75,
-
+    backgroundColor: 'transparent',
+    boxShadow: 0
+    // color: 'white',
+    // borderBottom: 0
   },
   btnContainer: {
     flexDirection: 'row',
-    // justifyContent: 'flex-end',
   },
   btn: {
-    marginLeftt: 20,
-    marginRight: 20,
+    marginLeftt: 22,
+    marginRight: 22,
   }
 });
 
