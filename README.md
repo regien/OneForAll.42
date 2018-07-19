@@ -38,6 +38,30 @@ Install dependencies:
 npm install
 ```
 
+or
+
+```
+yarn install
+```
+
+Then, start the node server
+
+```
+npm start
+```
+
+Use `&` to put it in the background
+
+```
+npm start &
+```
+
+And run the electron instance
+
+```
+npm run electron
+```
+
 ## Project Structure
 
 The idea of having a good project structure is to have a cross platform
@@ -169,12 +193,14 @@ And then just run the lint from your end.
   - [ ] Scalability
   - [ ] What, How, Why?
   - [ ] Google Slides
+  - [ ] Generate static site from README.md markdown
 - [ ] Design
   - [ ] Logo
   - [ ] Define color pallet
   - [x] UI / UX ideas
     - [x] Multiple services
-  - [ ] Attach App's mockups
+  - [x] Attach App's mockups
+  - [x] Prototype mockups
   - [ ] Make a tray icon
 - [ ] Electron
   - [x] Integrate `electron`
