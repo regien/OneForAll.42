@@ -2,28 +2,51 @@
   "name": "one-for-all",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/jraleman/OneForAll.42",
   "homepage": "https://jraleman.com/OneForAll.42",
-  "dependencies": {
-    "material-ui": "^0.20.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-i18n": "^1.0.1",
-    "react-router": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0",
-    "redux-persist": "^5.10.0",
-    "redux-thunk": "^2.3.0",
-    "semistandard": "^12.0.1",
-    "snazzy": "^7.1.1"
-  },
+  "keywords": [
+    "OneForAll",
+    "42"
+  ],
+  "author": "jraleman",
+  "license": "MIT",
+  "main": "src/electron/starter.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "node ./node_modules/semistandard/bin/cmd.js --verbose | node ./node_modules/snazzy/bin/cmd.js || true",
-    "lint-log": "npm run lint > lint.log ; open lint.log || true",
-    "lint-log-linux": "npm run lint > lint.log ; open lint.log || true",
-    "lint-install": "sudo npm install semistandard --global"
+    "electron": "electron .",
+    "electron-start": "node src/electron-wait-react",
+    "react-start": "react-scripts start",
+    "pack": "build --dir",
+    "dist": "npm run build && build",
+    "postinstall": "install-app-deps"
+  },
+  "dependencies": {
+    "electron": "^2.0.5",
+    "material-ui": "^0.20.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-i18n": "^1.0.1",
+    "react-scripts": "1.1.4",
+    "react-router": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.22.0",
+    "semistandard": "^12.0.1",
+    "snazzy": "^7.1.1"
+  },
+  "build": {
+    "appId": "com.42.one-for-all",
+    "win": {
+      "iconUrl": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-256.png"
+    },
+    "directories": {
+      "buildResources": "public"
+    }
   }
 }
