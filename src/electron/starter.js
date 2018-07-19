@@ -1,34 +1,20 @@
 const electron = require('electron');
 const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
 
-const path = require('path');
-const url = require('url');
+const { createWindow } = require('./window');
 
-let mainWindow;
+let mainWindow = null;
 
-function createWindow() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
-  mainWindow.loadURL(
-    process.env.ELECTRON_START_URL ||
-      url.format({
-        pathname: 'localhost:3000',
-        protocol: 'http:',
-        slashes: true
-      })
-  )
-  mainWindow.on('closed', () => {
-    mainWindow = null
-  })
-}
 app.on('ready', createWindow);
-app.on('window-all-closed', () => {
+
+// mac shit goes here
+app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
-    app.quit();
+    app.quit()
   }
-})
-app.on('activate', () => {
+});
+app.on('activate', function () {
   if (mainWindow === null) {
-    createWindow();
+    mainWindow = createWindow();
   }
-})
+});
