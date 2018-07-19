@@ -1,0 +1,147 @@
+{
+	"variables": [],
+	"info": {
+		"name": "42 API Calls",
+		"_postman_id": "bc7349b2-5b3a-ba95-e5e6-9528523b3a25",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.intra.42.fr/v2/users/",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/users/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/users/cfranco",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/users/cfranco",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/users/gmalpart",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/users/gmalpart",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/users/jaleman",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/users/jaleman",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/cursus",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/cursus",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/locations",
+			"request": {
+				"url": "https://api.intra.42.fr//v2/locations",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Some 42 api calls"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/campus",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/campus",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.intra.42.fr/v2/campus/7/users?page[number]=40&page[size]=100",
+			"request": {
+				"url": "https://api.intra.42.fr/v2/campus/7/users?page[number]=40&page[size]=100",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 255a6695cbca2c5a76218b686ff4092fce4f1b97e54fbfb460336c1adefcc5b3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

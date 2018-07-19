@@ -312,16 +312,14 @@ And then just run the lint from your end.
     - [ ] Add dummy containers
   - [ ] Fixtures
     - [x] Add basic module structure
-    - [ ] 42API
-      - [ ] Make a real api call, and copy the data to:
-        - [ ] 42API_userData.json
-        - [ ] 42API_userList.json
-    - [ ] appData.json
-      - [ ] navTabs (boolean flags)
-      - [ ] defaultLanguage
-      - [ ] messageOfTheDay
-      - [ ] defaultTheme
-  - [ ] Add Screens
+    - [x] 42API
+      - [x] Make a real api call, and copy the data to:
+        - [x] 42API_userData.json
+        - [x] 42API_userList.json
+    - [x] appData.json
+      - [x] userData
+      - [x] settingsData
+  - [ ] Screens
     - [ ] Login
       - [ ] Validate data
       - [ ] Use 42 API (fixture for now)
