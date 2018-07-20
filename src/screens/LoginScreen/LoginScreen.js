@@ -32,7 +32,7 @@ const LoginScreen = props => {
   const { classes } = props;
 
   return (
-    <div>
+    <div className={classes.root}>
       <div className={classes.margin}>
         <Grid container spacing={8} alignItems='flex-end'>
           <Grid item>
