@@ -6,7 +6,7 @@ const styles = theme => ({
   searchBar: {
     flexGrow: 0.75,
     backgroundColor: 'transparent',
-    boxShadow: 0
+    boxShadow: '0px 0px'
     // color: 'white',
     // borderBottom: 0
   },
