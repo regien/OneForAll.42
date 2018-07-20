@@ -2,24 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles';
 import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faDotCircle,
   faUserAstronaut,
-  // faSlack,
   faChalkboardTeacher,
   faStore,
   faCoffee,
   faHome
 } from '@fortawesome/free-solid-svg-icons'
-
 import {
   faSlack,
 } from '@fortawesome/free-brands-svg-icons'
@@ -29,18 +23,22 @@ class TabNavbar extends React.Component {
     super(props);
     this._classes = this.props.classes;
     this.state = {
-      value: 0
+      value: 'home'
     };
     return ;
   }
   handleChange = (event, value) => {
-    this.setState({ value });
-  };
+    this.props.action(value);
+    //this.setState({ value });
+  }
+  componentDidUpdate () {
+
+  }
   render() {
     const { classes } = this.props;
     const { value } = this.state;
     return (
-      <div className={classes.root}>
+      <div className={ this._classes.root }>
         <BottomNavigation
           value={ this.state.value }
           onChange={ this.handleChange }
@@ -49,37 +47,49 @@ class TabNavbar extends React.Component {
         >
           <BottomNavigationAction
             disabled={ false }
-            label="Home"
+            value={ "home" }
             icon={ <FontAwesomeIcon icon={ faDotCircle }/> }
           />
           <BottomNavigationAction
             disabled={ false }
-            label="Intra42"
+            value={ "intra" }
+            label={ "Intra42" }
+            showLabel={ value !== "home" ? true : false }
             icon={ <FontAwesomeIcon icon={ faUserAstronaut }/> }
           />
           <BottomNavigationAction
             disabled={ false }
-            label="Slack"
+            value={ "slack" }
+            label={ "Slack" }
+            showLabel={ value !== "home" ? true : false }
             icon={ <FontAwesomeIcon icon={ faSlack }/> }
           />
           <BottomNavigationAction
             disabled={ false }
-            label="Campus"
+            value={ "campus" }
+            label={ "Campus" }
+            showLabel={ value !== "home" ? true : false }
             icon={ <FontAwesomeIcon icon={ faChalkboardTeacher }/> }
           />
           <BottomNavigationAction
             disabled={ false }
-            label="Grand Exchange"
+            value={ "e-commerce" }
+            label={ "Grand Exchange" }
+            showLabel={ value !== "home" ? true : false }
             icon={ <FontAwesomeIcon icon={ faStore }/> }
           />
           <BottomNavigationAction
             disabled={ false }
-            label="Cantina"
+            value={ "cantina" }
+            label={ "Cantina" }
+            showLabel={ value !== "home" ? true : false }
             icon={ <FontAwesomeIcon icon={ faCoffee }/> }
           />
           <BottomNavigationAction
             disabled={ false }
-            label="Dorms"
+            value={ "dorms" }
+            label={ "Dorms" }
+            showLabel={ value !== "home" ? true : false }
             icon={ <FontAwesomeIcon icon={ faHome }/> }
           />
         </BottomNavigation>
@@ -90,18 +100,6 @@ class TabNavbar extends React.Component {
 
 TabNavbar.propTypes = {
   classes: PropTypes.object.isRequired,
-};
-
-function TabContainer(props) {
-  return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
-      {props.children}
-    </Typography>
-  );
-}
-
-TabContainer.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default withStyles(styles)(TabNavbar);

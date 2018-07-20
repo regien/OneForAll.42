@@ -1,18 +1,15 @@
 const colors = {
   palette: {
     primary: {
-      neutral: '#a7bbc2',
-      light: '#55c2bc',
-      main: '#22aad0',
-      dark: '#094761',
+      dark: '#0097A7;',
+      neutral: '#7e8792',
+      light: '#B2EBF2',
+      main: '#00BCD4',
       contrastText: '#fff',
     },
     secondary: {
-      neutral: '#c292bb',
-      light: '#8e3482',
-      main: '#671e5c',
-      dark: '#390e34',
-      contrastText: '#000',
+      main: '#FFC107',
+      contrastText: '#000'
     },
     contrast: {
       dark: '#121212',

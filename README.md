@@ -227,13 +227,13 @@ And then just run the lint from your end.
 
 ### Colors
 
-#### Primary
+#### Primary (Stone Yellow)
 
-![#222222](http://via.placeholder.com/150/222222/fffffff?text=222222)
-![#333333](http://via.placeholder.com/150/333333/fffffff?text=333333)
-![#444444](http://via.placeholder.com/150/444444/fffffff?text=444444)
-![#555555](http://via.placeholder.com/150/555555/fffffff?text=555555)
-![#666666](http://via.placeholder.com/150/666666/fffffff?text=666666)
+![#3D444E](http://via.placeholder.com/150/3D444E/000000?text=3D444E)
+![#7E8792](http://via.placeholder.com/150/7E8792/ffffff?text=7E8792)
+![#C4B9B0](http://via.placeholder.com/150/C4B9B0/000000?text=C4B9B0)
+![#FEA700](http://via.placeholder.com/150/FEA700/000000?text=FEA700)
+![#9B4900](http://via.placeholder.com/150/9B4900/000000?text=9B4900)
 
 #### Secondary
 
@@ -247,14 +247,6 @@ And then just run the lint from your end.
 
 ![#121212](http://via.placeholder.com/150/121212/ffffff?text=121212)
 ![#f9f9f9](http://via.placeholder.com/150/f9f9f9/000000?text=f9f9f9)
-
-####  Stone Yellow
-
-![#3D444E](http://via.placeholder.com/150/3D444E/000000?text=3D444E)
-![#7E8792](http://via.placeholder.com/150/7E8792/ffffff?text=7E8792)
-![#C4B9B0](http://via.placeholder.com/150/C4B9B0/000000?text=C4B9B0)
-![#FEA700](http://via.placeholder.com/150/FEA700/000000?text=FEA700)
-![#9B4900](http://via.placeholder.com/150/9B4900/000000?text=9B4900)
 
 #### Success / Error / Warning / Info
 
@@ -290,20 +282,20 @@ And then just run the lint from your end.
   - [x] Init `create-react-app`
   - [x] Set styleguide
   - [x] Config lint script
-- [ ] Pitch
-  - [ ] Prototype
-  - [ ] Scalability
-  - [ ] What, How, Why?
+- [x] Pitch
+  - [x] Prototype
+  - [x] Scalability
+  - [x] What, How, Why?
   - [ ] Google Slides
   - [ ] Generate static site from README.md markdown
-- [ ] Design
-  - [ ] Logo
-  - [ ] Define color pallet
+- [x] Design
+  - [x] Logo
+  - [x] Define color pallet
   - [x] UI / UX ideas
     - [x] Multiple services
   - [x] Attach App's mockups
   - [x] Prototype mockups
-  - [ ] Make a tray icon
+  - [x] Make a tray icon
 - [ ] Electron
   - [x] Integrate `electron`
     - [x] Install the module as dev (`npm install --save-dev electron`)
@@ -334,14 +326,14 @@ And then just run the lint from your end.
     - [x] appData.json
       - [x] userData
       - [x] settingsData
-  - [ ] Components
-    - [ ] AppHeader
-    - [ ] TabNavbar
-  - [ ] Containers
+  - [x] Components
+    - [x] AppHeader
+    - [x] TabNavbar
+  - [x] Containers
     - [x] RootContainer
-    - [ ] LanguagesContainer
-    - [ ] ServicesContainer
-    - [ ] ThemesContainer
+    - [x] LanguagesContainer
+    - [x] ServicesContainer
+    - [x] ThemesContainer
   - [ ] Screens
     - [ ] Onboarding
     - [ ] Login
@@ -357,16 +349,16 @@ And then just run the lint from your end.
         - [ ] Toggle services (all on by default)
         - [ ] Language selector
         - [ ] Change themes (day-night)
-    - [ ] Services
-      - [ ] Intra
-      - [ ] Slack
-      - [ ] Campus
-      - [ ] Cantina
+    - [ ] Services (not working that great...)
+      - [x] Intra
+      - [x] Slack
+      - [x] Campus
+      - [x] Cantina
       - [ ] E-commerce (sub-menu)
-        - [ ] 42 Shop
+        - [x] 42 Shop
         - [ ] Crowd-funding
         - [ ] Bazaar
-      - [ ] Dorms
+      - [x] Dorms
   - [ ] Integrate easter eggs via `cheat.js`
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
@@ -386,10 +378,10 @@ And then just run the lint from your end.
     - [ ] Setup the redux store
     - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
     - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
-  - [ ] Navigation
-    - [ ] TabNavigator Structure
-      - [ ] Style
-      - [ ] Icons
+  - [x] Navigation
+    - [x] TabNavigator Structure
+      - [x] Style
+      - [x] Icons
     - [ ] Sub-menu modal or something like that
     - [ ] Use `react-router` (`npm install --save react-router`)
   - [ ] Firebase
@@ -405,6 +397,7 @@ And then just run the lint from your end.
 - [electron-quick-start](https://github.com/electron/electron-quick-start)
 - [Christian Sepulveda's - How to build an Electron app using create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
 - [Flaviocopes - react-electron)](https://flaviocopes.com/react-electron/)
+- [Emir Bakhtarov's - Handling of iframes in React](https://medium.com/@ebakhtarov/handling-of-iframes-in-react-f038be46ac24)
 
 ## License
 
