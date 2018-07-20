@@ -28,37 +28,31 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-const options = [
-  'None',
-  'Atria',
-  'Callisto',
-  'Dione',
-  'Ganymede',
-  'Hangouts Call',
-  'Luna',
-  'Oberon',
-  'Phobos',
-  'Pyxis',
-  'Sedna',
-  'Titania',
-  'Triton',
-  'Umbriel',
-];
-
-// Show / Hide Toogle:
-// https://stackoverflow.com/questions/29913387/show-hide-components-in-reactjs
+// const services = {
+//   intra: 'https://intra.42.fr',
+//   slack: 'https://42siliconvalleyschool.slack.com',
+//   campus: 'https://campus.42.us.org',
+//   grandExchange: {
+//     shop42: 'https://shop.42.us.org',
+//     bazaar: 'https://chupamelo.com',
+//     crowdFunding: 'https://rico.com'
+//   },
+//   cantina: 'https://cantina.42.us.org',
+//   dorms: 'https://jraleman.com/nostromo-dorms'
+// }
 
 const services = {
-  intra: 'https://intra.42.fr',
-  slack: 'https://42siliconvalleyschool.slack.com',
-  campus: 'https://campus.42.us.org',
-  grandExchange: {
-    shop42: 'https://shop.42.us.org',
-    bazaar: 'https://chupamelo.com',
-    crowdFunding: 'https://rico.com'
-  },
-  cantina: 'https://cantina.42.us.org',
-  dorms: 'https://jraleman.com/nostromo-dorms'
+  intra: 'intra',
+  slack: 'slack',
+  campus: 'campus',
+  // grandExchange: {
+  //   shop42: 'https://shop.42.us.org',
+  //   bazaar: 'https://chupamelo.com',
+  //   crowdFunding: 'https://rico.com'
+  // },
+  shop42: 'shop42',
+  cantina: 'cantina',
+  dorms: 'dorms'
 }
 
 class RootContainer extends React.Component {
@@ -66,16 +60,20 @@ class RootContainer extends React.Component {
     super(props);
     this._classes = this.props.classes;
     this.state = {
-      service: 'Boku no Hero',
+      service: 'intra',
       serviceUrl: 'https://42schoolsiliconvalley.slack.com',
       open: false,
       value: 'Done',
     };
+    // this.tmpUrl = 'https://intra.42.fr';
     return ;
   }
   handleNavBar = (val) => {
     // this.setState({ serviceUrl: 'https://intra.42.fr' })
-    alert(val);
+    // alert(val);
+    // this.tmpUrl = val;
+    this.switchTabs(val);
+    // alert(this.state.serviceUrl);
     return ;
   }
   openDialogSetting = () => {
@@ -84,9 +82,8 @@ class RootContainer extends React.Component {
   handleClose = value => {
     this.setState({ value, open: false });
   };
-  /*
   switchTabs (val) {
-    var tab = this.state.service;
+    var tab = null;
     switch (val) {
       case 'intra':
         tab = services.intra;
@@ -107,10 +104,13 @@ class RootContainer extends React.Component {
         tab = services.dorms;
         break ;
     }
-    this.setState({ serviceUrl: tab })
+    // this.tmpUrl = tab;
+    // alert(this.state.service)
+    this.setState({ service: tab })
     return ;
   }
-  */
+  // Show / Hide Toogle:
+  // https://stackoverflow.com/questions/29913387/show-hide-components-in-reactjs
   render () {
     return (
       <React.Fragment>
@@ -118,7 +118,8 @@ class RootContainer extends React.Component {
           <CssBaseline>
             <AppHeader />
 
-            <ServiceScreen service={ this.state.serviceUrl } />
+            <ServiceScreen service={ this.state.service } />
+
 {/*
             <ConfirmationDialogRaw
               open={ this.state.open }

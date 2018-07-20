@@ -28,10 +28,11 @@ class TabNavbar extends React.Component {
     return ;
   }
   handleChange = (event, value) => {
-    this.setState({ value });
+    this.props.action(value);
+    //this.setState({ value });
   }
   componentDidUpdate () {
-    this.props.action(this.state.value);
+
   }
   render() {
     const { classes } = this.props;
