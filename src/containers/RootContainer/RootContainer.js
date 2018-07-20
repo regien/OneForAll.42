@@ -64,17 +64,17 @@ const services = {
 class RootContainer extends React.Component {
   constructor (props) {
     super(props);
+    this._classes = this.props.classes;
     this.state = {
       service: 'Boku no Hero',
       serviceUrl: 'https://42schoolsiliconvalley.slack.com',
       open: false,
       value: 'Done',
     };
-    this._classes = this.props.classes;
     return ;
   }
-  handleNavBar (val) {
-    // alert("Hello, Father!");
+  handleNavBar = (val) => {
+    // this.setState({ serviceUrl: 'https://intra.42.fr' })
     alert(val);
     return ;
   }
@@ -84,6 +84,7 @@ class RootContainer extends React.Component {
   handleClose = value => {
     this.setState({ value, open: false });
   };
+  /*
   switchTabs (val) {
     var tab = this.state.service;
     switch (val) {
@@ -109,6 +110,7 @@ class RootContainer extends React.Component {
     this.setState({ serviceUrl: tab })
     return ;
   }
+  */
   render () {
     return (
       <React.Fragment>
@@ -116,26 +118,27 @@ class RootContainer extends React.Component {
           <CssBaseline>
             <AppHeader />
 
-            {/*
-              <ServiceScreen service={ this.state.serviceUrl } />
-              <ServicesContainer />
-              <ThemesContainer />
-              <LanguagesContainer />
-            */}
-
+            <ServiceScreen service={ this.state.serviceUrl } />
+{/*
             <ConfirmationDialogRaw
               open={ this.state.open }
               onClose={ this.handleClose }
               value={ this.state.value }
             />
-
-            <TabNavbar />
+*/}
+            <TabNavbar
+              action={ this.handleNavBar }
+            />
           </CssBaseline>
         </MuiThemeProvider>
       </React.Fragment>
     )
   }
 }
+
+/*
+** ............................................................................
+*/
 
 class ConfirmationDialogRaw extends React.Component {
   radioGroup = null;
