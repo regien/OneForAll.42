@@ -15,11 +15,9 @@ class ServicesContainer extends React.Component {
       intra: true,
       slack: true,
       campus: true,
-      grandExchange: {
-        shop42: true,
-        bazaar: true,
-        crowdFunding: true
-      },
+      shop42: true,
+      bazaar: true,
+      crowdFunding: true,
       cantina: true,
       dorms: true
     };
@@ -83,7 +81,7 @@ class ServicesContainer extends React.Component {
             control=
             {
               <Switch
-                checked={ this.state.grandExchange.shop42 }
+                checked={ this.state.shop42 }
                 onChange={ this.handleChange('shop42') }
                 value={ 'shop42' }
                 color={ "primary" }
@@ -96,7 +94,7 @@ class ServicesContainer extends React.Component {
             control=
             {
               <Switch
-                checked={ this.state.grandExchange.bazaar }
+                checked={ this.state.bazaar }
                 onChange={ this.handleChange('bazaar') }
                 value={ 'bazaar' }
                 color={ "primary" }
@@ -109,7 +107,7 @@ class ServicesContainer extends React.Component {
             control=
             {
               <Switch
-                checked={ this.state.grandExchange.crowdFunding }
+                checked={ this.state.crowdFunding }
                 onChange={ this.handleChange('crowdFunding') }
                 value={ 'crowdFunding' }
                 color={ "primary" }
