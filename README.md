@@ -248,6 +248,14 @@ And then just run the lint from your end.
 ![#121212](http://via.placeholder.com/150/121212/ffffff?text=121212)
 ![#f9f9f9](http://via.placeholder.com/150/f9f9f9/000000?text=f9f9f9)
 
+####  Stone Yellow
+
+![#3D444E](http://via.placeholder.com/150/3D444E/000000?text=3D444E)
+![#7E8792](http://via.placeholder.com/150/7E8792/ffffff?text=7E8792)
+![#C4B9B0](http://via.placeholder.com/150/C4B9B0/000000?text=C4B9B0)
+![#FEA700](http://via.placeholder.com/150/FEA700/000000?text=FEA700)
+![#9B4900](http://via.placeholder.com/150/9B4900/000000?text=9B4900)
+
 #### Success / Error / Warning / Info
 
 ![#b8e986](http://via.placeholder.com/150/b8e986/000000?text=b8e986)
