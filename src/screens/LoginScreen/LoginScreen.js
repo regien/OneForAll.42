@@ -65,6 +65,8 @@ const LoginScreen = props => {
       <Button variant='contained' color='primary' type='submit' >
         Login
       </Button>
+      <hr />
+      <a href='#'>Got problems with the login?</a>
     </div>
   );
 };
