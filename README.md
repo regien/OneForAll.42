@@ -282,20 +282,20 @@ And then just run the lint from your end.
   - [x] Init `create-react-app`
   - [x] Set styleguide
   - [x] Config lint script
-- [ ] Pitch
-  - [ ] Prototype
-  - [ ] Scalability
-  - [ ] What, How, Why?
+- [x] Pitch
+  - [x] Prototype
+  - [x] Scalability
+  - [x] What, How, Why?
   - [ ] Google Slides
   - [ ] Generate static site from README.md markdown
-- [ ] Design
-  - [ ] Logo
-  - [ ] Define color pallet
+- [x] Design
+  - [x] Logo
+  - [x] Define color pallet
   - [x] UI / UX ideas
     - [x] Multiple services
   - [x] Attach App's mockups
   - [x] Prototype mockups
-  - [ ] Make a tray icon
+  - [x] Make a tray icon
 - [ ] Electron
   - [x] Integrate `electron`
     - [x] Install the module as dev (`npm install --save-dev electron`)
@@ -349,7 +349,7 @@ And then just run the lint from your end.
         - [ ] Toggle services (all on by default)
         - [ ] Language selector
         - [ ] Change themes (day-night)
-    - [ ] Services
+    - [ ] Services (not working that great...)
       - [x] Intra
       - [x] Slack
       - [x] Campus
@@ -378,7 +378,7 @@ And then just run the lint from your end.
     - [ ] Setup the redux store
     - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
     - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
-  - [ ] Navigation
+  - [x] Navigation
     - [x] TabNavigator Structure
       - [x] Style
       - [x] Icons
