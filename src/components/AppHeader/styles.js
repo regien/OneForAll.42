@@ -10,6 +10,9 @@ const styles = theme => ({
     // color: 'white',
     // borderBottom: 0
   },
+  input: {
+    color: '#fff'
+  },
   btnContainer: {
     flexDirection: 'row',
   },

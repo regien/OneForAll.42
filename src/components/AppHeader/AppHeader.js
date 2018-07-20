@@ -50,6 +50,9 @@ class AppHeader extends React.Component {
               value={ this.state.searchValue }
               onChange={(newValue) => this.setState({ searchValue: newValue })}
               onRequestSearch={() => this.handleSearch(this.state.searchValue)}
+              classes= {{
+                input: this._classes.input 
+              }}
             >
               <CloseIcon color='white'  />
               <SearchIcon color='white'  />
