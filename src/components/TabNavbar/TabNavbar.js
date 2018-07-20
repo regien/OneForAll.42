@@ -23,13 +23,16 @@ class TabNavbar extends React.Component {
     super(props);
     this._classes = this.props.classes;
     this.state = {
-      value: "home"
+      value: 'home'
     };
     return ;
   }
   handleChange = (event, value) => {
     this.setState({ value });
-  };
+  }
+  componentDidUpdate () {
+    this.props.action(this.state.value);
+  }
   render() {
     const { classes } = this.props;
     const { value } = this.state;
