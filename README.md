@@ -326,14 +326,14 @@ And then just run the lint from your end.
     - [x] appData.json
       - [x] userData
       - [x] settingsData
-  - [ ] Components
-    - [ ] AppHeader
-    - [ ] TabNavbar
-  - [ ] Containers
+  - [x] Components
+    - [x] AppHeader
+    - [x] TabNavbar
+  - [x] Containers
     - [x] RootContainer
-    - [ ] LanguagesContainer
-    - [ ] ServicesContainer
-    - [ ] ThemesContainer
+    - [x] LanguagesContainer
+    - [x] ServicesContainer
+    - [x] ThemesContainer
   - [ ] Screens
     - [ ] Onboarding
     - [ ] Login
@@ -350,15 +350,15 @@ And then just run the lint from your end.
         - [ ] Language selector
         - [ ] Change themes (day-night)
     - [ ] Services
-      - [ ] Intra
-      - [ ] Slack
-      - [ ] Campus
-      - [ ] Cantina
+      - [x] Intra
+      - [x] Slack
+      - [x] Campus
+      - [x] Cantina
       - [ ] E-commerce (sub-menu)
-        - [ ] 42 Shop
+        - [x] 42 Shop
         - [ ] Crowd-funding
         - [ ] Bazaar
-      - [ ] Dorms
+      - [x] Dorms
   - [ ] Integrate easter eggs via `cheat.js`
     - [ ] Add `boku no hero` references as easter egg
     - [ ] Video games reference too
@@ -379,9 +379,9 @@ And then just run the lint from your end.
     - [ ] Use `redux-thunk` (`npm install --save redux-thunk`)
     - [ ] Keep stored data via `redux-persist`  (`npm install --save redux-persist`)
   - [ ] Navigation
-    - [ ] TabNavigator Structure
-      - [ ] Style
-      - [ ] Icons
+    - [x] TabNavigator Structure
+      - [x] Style
+      - [x] Icons
     - [ ] Sub-menu modal or something like that
     - [ ] Use `react-router` (`npm install --save react-router`)
   - [ ] Firebase
@@ -397,6 +397,7 @@ And then just run the lint from your end.
 - [electron-quick-start](https://github.com/electron/electron-quick-start)
 - [Christian Sepulveda's - How to build an Electron app using create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
 - [Flaviocopes - react-electron)](https://flaviocopes.com/react-electron/)
+- [Emir Bakhtarov's - Handling of iframes in React](https://medium.com/@ebakhtarov/handling-of-iframes-in-react-f038be46ac24)
 
 ## License
 
