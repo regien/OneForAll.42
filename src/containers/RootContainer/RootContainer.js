@@ -4,6 +4,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import themes from '../../themes';
 import AppHeader from '../../components/AppHeader';
 import TabNavbar from '../../components/TabNavbar';
+import LoginScreen from '../../screens/LoginScreen';
 
 // Show / Hide Toogle:
 // https://stackoverflow.com/questions/29913387/show-hide-components-in-reactjs
@@ -21,7 +22,8 @@ class RootContainer extends React.Component {
           <CssBaseline />
           <AppHeader />
           <TabNavbar />
-          <h1>{ "RootContainer" }</h1>
+          {/* <h1>{ "RootContainer" }</h1> */}
+          <LoginScreen />
         </MuiThemeProvider>
       </React.Fragment>
     )
