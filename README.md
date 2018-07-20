@@ -227,21 +227,13 @@ And then just run the lint from your end.
 
 ### Colors
 
-#### Primary (Stone Yellow)
+#### Primary
 
-![#3D444E](http://via.placeholder.com/150/3D444E/000000?text=3D444E)
-![#7E8792](http://via.placeholder.com/150/7E8792/ffffff?text=7E8792)
-![#C4B9B0](http://via.placeholder.com/150/C4B9B0/000000?text=C4B9B0)
-![#FEA700](http://via.placeholder.com/150/FEA700/000000?text=FEA700)
-![#9B4900](http://via.placeholder.com/150/9B4900/000000?text=9B4900)
-
-#### Secondary
-
-![#777777](http://via.placeholder.com/150/777777/fffffff?text=777777)
-![#888888](http://via.placeholder.com/150/888888/fffffff?text=888888)
-![#999999](http://via.placeholder.com/150/999999/fffffff?text=999999)
-![#AAAAAA](http://via.placeholder.com/150/AAAAAA/fffffff?text=aaaaaa)
-![#BBBBBB](http://via.placeholder.com/150/BBBBBB/0000000?text=bbbbbb)
+![#0097A7](http://via.placeholder.com/150/3D444E/000000?text=3D444E)
+![#00BCD4](http://via.placeholder.com/150/7E8792/ffffff?text=7E8792)
+![#B2EBF2](http://via.placeholder.com/150/C4B9B0/000000?text=C4B9B0)
+![#FFC107](http://via.placeholder.com/150/FEA700/000000?text=FEA700)
+![#7e8792](http://via.placeholder.com/150/9B4900/000000?text=9B4900)
 
 #### Dark / Light
 
