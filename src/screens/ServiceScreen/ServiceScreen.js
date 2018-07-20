@@ -9,18 +9,19 @@ class ServiceScreen extends React.Component {
   constructor (props) {
     super(props);
     this._classes = this.props.classes;
+    this._service = this.props.service;
     this.state = {};
     return ;
   }
   render () {
     return (
       <div className={ this._classes.root }>
-          <div className={ this._classes.webviewContainer }>
+        <div className={ this._classes.webviewContainer }>
             <WebView
               className={ this._classes.webview }
-              src="https://intra.42.fr/"
+              src={ this._service }
             />
-          </div>
+        </div>
       </div>
     );
   }
