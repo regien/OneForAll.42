@@ -4,13 +4,12 @@ const styles = theme => ({
   },
   webviewContainer: {
     position: 'relative',
-    overflow: 'hidden',
-    paddingTop: '56.25%'
+    overflow: 'hidden'
   },
   webview: {
     display: 'flex',
     width: '100%',
-    height: '100%',
+    height: 'calc(100vh - 100px)',
     border: 'none'
   }
 });
