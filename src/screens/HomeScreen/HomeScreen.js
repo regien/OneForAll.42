@@ -1,5 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types';
 import styles from './styles';
+import { withStyles } from '@material-ui/core/styles';
 
 class HomeScreen extends React.Component {
   constructor (props) {
@@ -11,7 +14,7 @@ class HomeScreen extends React.Component {
   render () {
     return (
       <div className={ this._classes.root }>
-        <h1>{ "THomeScreen" }</h1>
+
       </div>
     );
   }
@@ -21,4 +24,4 @@ HomeScreen.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default HomeScreen;
+export default withStyles(styles)(HomeScreen);
